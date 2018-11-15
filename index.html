@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    
+    <link rel= "stylesheet" type= "text/css" href= "assets/css/style.css">
+    <!-- <link rel= "stylesheet" type= "text/css" href= "assets/css/reset.css"> -->
+    <title>Gem Game</title>
 </head>
 <body>
+
     <div class = "container">
         <div class = "row">
             <div class = "col-md-4">
                 <h1>Crystals Collector!</h1>
             </div>
-    
+        </div>
+
         <div class= "row">
             <div class= "col-md-6">
                 <p>You will be given a random number at the start of the
@@ -26,35 +31,46 @@
                     click on it.</p>
                 <p>Each time when the game starts, the game will change the
                     values of each crystal.</p>
-
-        <div class= "row">
-            <div class= "col-md-3" id= "current-points">
-                <div class= "col-md-2" id= "wins-losses">
-
-                </div>
             </div>
-        <div class= "row">
-            <div class= "col-md-6" id= "gems">
+        </div>
 
+        <div class= "row">
+            <div class= "col-md-3" id= "current-number">
+                <h3>28</h3>
+            </div>
+
+            <div class= "col-md-2" id= "wins-losses">
+                <h3>Wins/Losses</h3>
+            </div>
+        </div> 
+
+        <div class= "row">
+            <div class= "col-md-12" id= "gems">
+                <img src="assets/images/diamond.png" height= "100px" width= "100px" alt="diamond">
+                <button class="btn">Button</button>
+
+                <img src="assets/images/druse.jpg" height= "100px" width= "100px" alt="diamond">
+                <button class="btn">Button</button>
+
+                <img src="assets/images/drusy.jpg" height= "100px" width= "100px" alt="diamond">
+                <button class="btn">Button</button>
+
+                <img src="assets/images/stones.jpg" height= "100px" width= "100px" alt="diamond">
+                <button class="btn">Button</button>
             </div>
         </div>
 
         <div class= "row">
             <div class= "col-md-3" id= "score">
-
+                <h3>Your Score Is:</h3>
             </div>
         </div>
-
-
-        </div>
-                
- 
-                
-            </div>
-        </div>
-        </div>
-
 
     </div>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type= "text/javascript" src= "assets/javascript/game.js"></script>
+    
+    
 </body>
 </html>
