@@ -12,7 +12,7 @@ var crystalNumbers = [10, 15, 5, 2];
 //     return Math.floor(Math.random()*(1, 12))+ min;
 // }
 
-counter++;
+
 for (i = 0; i < crystalNumbers.length; i++) {
     var crystalImage = $("<img>");
    
@@ -23,16 +23,16 @@ for (i = 0; i < crystalNumbers.length; i++) {
     crystalImage.attr("crystalvalue", crystalNumbers[i]);
 
     $("#gems").append(crystalImage);
-
-    $(".crystal-image").on("click", function() {
-
-    var imageValue = ($(this).attr("imagevalue"));
-    ImageValue = parseInt(imageValue);
-
-    counter += imageValue;
-    $("#score").html("<h3>" + imageValue + "</h3>");
-    });
 }
+
+$(".crystal-image").on("click", function() {
+
+    var imageValue = ($(this).attr("crystalvalue"));
+    
+    console.log(typeof parseInt(imageValue));
+    counter += parseInt(imageValue);
+    $("#score").html("<h3>" + counter + "</h3>");
+    });
 /*create variables for gems images, create function that generates
 a random between 1-12 for each image when game starts*/
 
